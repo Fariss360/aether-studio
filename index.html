@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AETHER — AI Production Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- living animated background (drifting aquatic light) -->
+  <div class="bg-aurora" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <canvas class="bg-particles"></canvas>
+  </div>
+
+  <!-- custom cursor -->
+  <div class="cursor-ring"></div>
+  <div class="cursor-core"></div>
+
+  <!-- floating nav island -->
+  <nav class="nav-island" data-magnetic>
+    <span class="brand">AE<b>·</b>THER</span>
+    <a href="#timeline" data-magnetic>Work</a>
+    <a href="#pipeline" data-magnetic>Pipeline</a>
+    <a href="#footer" data-magnetic>Contact</a>
+  </nav>
+
+  <main id="scroll-root">
+    <!-- 01 HERO -->
+    <section id="hero" class="block">
+      <div class="hero-stage">
+        <div class="hero-mesh"></div>
+        <div class="hero-marquee" aria-hidden="true">
+          <div class="hm-track"></div>
+        </div>
+        <div class="prompt-box">
+          <div class="label">// AETHER ENGINE — prompt</div>
+          <div class="typed"></div><span class="caret">_</span>
+        </div>
+        <div class="render-skeleton">
+          <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+          <div class="bar"></div><div class="bar"></div>
+        </div>
+        <div class="hero-reel"><!-- showreel injected by hero.js --></div>
+      </div>
+    </section>
+
+    <!-- 02 THE REEL — video constellation -->
+    <section id="timeline" class="block">
+      <div class="reel-intro">
+        <p class="eyebrow">Selected Work</p>
+        <h2 class="section-title">The <span class="accent">Reel</span></h2>
+        <p class="reel-sub">scroll to traverse the constellation</p>
+      </div>
+      <div class="constellation">
+        <svg class="edges" preserveAspectRatio="none"></svg>
+        <div class="hub"><span class="hub-core"></span></div>
+        <!-- video nodes injected by clips.js -->
+      </div>
+    </section>
+
+    <!-- 03 PIPELINE -->
+    <section id="pipeline" class="block">
+      <div class="pipeline-stage">
+        <div class="pipeline-head">
+          <p class="eyebrow">The Process</p>
+          <h2 class="section-title">The <span class="accent">Pipeline</span></h2>
+        </div>
+        <div class="pipe">
+          <div class="pipe-rail"><div class="pipe-fill"></div><span class="pipe-packet"></span></div>
+          <div class="pipe-stages"><!-- stages injected by pipeline.js --></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 FOOTER -->
+    <footer id="footer">
+      <div class="marquee"><div class="marquee-inner"></div></div>
+      <div class="marquee reverse"><div class="marquee-inner"></div></div>
+      <div class="footer-contact">
+        <a href="mailto:hello@aether.studio" data-magnetic>hello@aether.studio</a>
+        <span>© AETHER STUDIO — 2026</span>
+        <a href="#hero" data-magnetic>↑ back to surface</a>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

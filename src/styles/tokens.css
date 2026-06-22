@@ -1,0 +1,32 @@
+:root {
+  /* — OBSIDIAN (the panther / the canvas) — */
+  --void:        #050608;
+  --obsidian:    #0A0D12;
+  --gloss:       #141A22;
+  --selection:   #0E2A33;
+
+  /* — TIGER-ORANGE (high-voltage, rationed) — */
+  --voltage:     #FF7A00;
+  --voltage-hot: #FF9A33;
+  --ember:       #C24A00;
+
+  /* — AQUATIC (the water / fluid midtones) — */
+  --teal-deep:   #0B3B45;
+  --teal:        #1FA3A8;
+  --cyan:        #4FE3D8;
+  --abyss-blue:  #062A3D;
+
+  /* — neutrals — */
+  --fog:         #C7D0D4;
+  --mist:        #6B7A80;
+
+  /* motion */
+  --ease-fluid:  cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snap:   cubic-bezier(0.7, 0, 0.2, 1);
+
+  /* type */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+}
+
+::selection { background: var(--selection); color: var(--cyan); }
